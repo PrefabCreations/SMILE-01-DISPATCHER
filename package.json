@@ -1,0 +1,16 @@
+{
+  "name": "smile01-railway-dispatcher",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node dispatcher.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "googleapis": "^144.0.0",
+    "openai": "^5.0.0"
+  }
+}
