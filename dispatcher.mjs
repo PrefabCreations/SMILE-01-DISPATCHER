@@ -9,11 +9,9 @@ const FACE_DECK = ["🙂","😄","😁","😂","😇","😎","🤓","🤠","🥳
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const auth = new google.auth.GoogleAuth({
-  credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON),
-  scopes: ["https://www.googleapis.com/auth/documents","https://www.googleapis.com/auth/drive.readonly"]
+  scopes: ["https://www.googleapis.com/auth/documents"]
 });
 const docs = google.docs({ version: "v1", auth });
-
 let running = true;
 let lastStatus = { state: "starting", message: "Dispatcher starting" };
 
